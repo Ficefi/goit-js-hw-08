@@ -1,4 +1,4 @@
-const throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
 
 const feedback = document.querySelector('.feedback-form');
 const storageKey = 'feedback-form-state';
@@ -28,4 +28,6 @@ feedback.addEventListener('submit', event => {
   event.preventDefault();
   localStorage.removeItem(storageKey);
   feedback.reset();
+  console.log(dataForm.email);
+  console.log(dataForm.message);
 });
