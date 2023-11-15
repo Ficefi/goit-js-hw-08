@@ -28,6 +28,5 @@ feedback.addEventListener('submit', event => {
   event.preventDefault();
   localStorage.removeItem(storageKey);
   feedback.reset();
-  console.log(dataForm.email);
-  console.log(dataForm.message);
+  console.log(dataForm);
 });
